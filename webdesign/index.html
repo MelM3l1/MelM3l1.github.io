@@ -36,7 +36,17 @@ h1 {
   <body>
     <!-- Simple button -->
     <button>Click Me!</button>
-</body>
+    <!-- Button with click event -->
+    <button onclick="showAlert()">Click Me!</button>
+
+    <script>
+        function showAlert() {
+            alert("Button was clicked!");
+        }
+    </script>
+     <!-- Button with redirect action -->
+    <button onclick="window.location.href='https://github.com';">Go to GitHub</button>
+  </body>
 
     </style>
 </html>
