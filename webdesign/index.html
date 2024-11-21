@@ -29,7 +29,22 @@ h1 {
   THE MEAN CATS (¬`‸´¬) .</p>
 <p> Mr. Kitty and his friends were having a great time playing outside with their ball. Suddenly, a group of mischievous stray cats joined the fun and snatched their ball away! (╥﹏╥)
    <!-- Image without button -->
-    <img src="https://i.pinimg.com/enabled_lo_mid/736x/51/b5/b4/51b5b40831ead98e11bdc077e31d2851.jpg" alt="Image Example" width="200">
+     body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Horizontally center the image */
+            align-items: center; /* Vertically center the image */
+        }
+        img {
+            max-width: 100%; /* Make sure the image does not overflow */
+            height: auto;    /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- Centered Image -->
+    <img src="https://i.pinimg.com/enabled_lo_mid/736x/51/b5/b4/51b5b40831ead98e11bdc077e31d2851.jpg" alt="Image Example">
 </body> 
   <head>
     <meta charset="UTF-8">
