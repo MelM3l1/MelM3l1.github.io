@@ -22,7 +22,8 @@
         }
 
         img {
-            max-width: 200%; /* Ensure the image scales responsively */
+            width: 80%; /* Set image width to 80% of the viewport width */
+            max-width: 1200px; /* Limit max width to 1200px */
             height: auto; /* Maintain aspect ratio */
             margin-top: 20px; /* Add space above the image */
             display: block;
@@ -44,6 +45,19 @@
             background-color: #45a049; /* Darker green on hover */
         }
 
+        input[type="submit"] {
+            margin-top: 20px; /* Space between image and button */
+            padding: 10px 20px; /* Button padding */
+            font-size: 16px; /* Font size */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            border: none; /* Remove border */
+            cursor: pointer; /* Change cursor on hover */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
     </style>
 </head>
 <body>
