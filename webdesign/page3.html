@@ -1,29 +1,5 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<style>
-  h1 {
-  text-decoration: underline;
-}
-body {
-  color: pink;
-}
-
-h1 {
-  color: pink;
-}
-  
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  }
-  
-</style>
-</head>
-<body>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,8 +27,13 @@ h1 {
             margin-top: 20px; /* Add space above the image */
         }
 
-        button {
-            margin-top: 20px; /* Space between image and button */
+        .button-container {
+            margin-top: 20px; /* Space between image and buttons */
+            display: flex; /* Use flexbox to align buttons side by side */
+            gap: 10px; /* Add space between the buttons */
+        }
+
+        input[type="submit"] {
             padding: 10px 20px; /* Button padding */
             font-size: 16px; /* Font size */
             background-color: #4CAF50; /* Green background */
@@ -61,9 +42,10 @@ h1 {
             cursor: pointer; /* Change cursor on hover */
         }
 
-        button:hover {
+        input[type="submit"]:hover {
             background-color: #45a049; /* Darker green on hover */
         }
+
     </style>
 </head>
 <body>
@@ -78,13 +60,16 @@ h1 {
     <!-- Centered Image -->
     <img src="https://i.pinimg.com/736x/15/a0/fb/15a0fb02ea1eb5d7e563f3f51f8befd1.jpg" alt="Image Example">
 
-    <!-- Button with redirect action -->
-<form action="page4.html">
-    <input type="submit" value="NEXT꩜ .ᐟ" />
-</form>
-  <form action="page2.html">
-    <input type="submit" value="BACK ↩" />
-</form>
+    <!-- Buttons next to each other -->
+    <div class="button-container">
+        <form action="page2.html">
+            <input type="submit" value="BACK ↩" />
+        </form>
+        <form action="page4.html">
+            <input type="submit" value="NEXT꩜ .ᐟ" />
+        </form>
+    </div>
 
 </body>
 </html>
+
