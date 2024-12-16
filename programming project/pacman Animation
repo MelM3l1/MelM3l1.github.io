@@ -1,0 +1,32 @@
+let mouthAngle = 0; // Variable to control the mouth angle
+let mouthDirection = 1; // Variable to toggle the direction of mouth animation
+
+
+function setup() {
+  createCanvas(500, 500);
+  rectMode(CENTER);
+}//cloase setup
+
+
+function draw() {
+  background(0);//black
+  
+  //face base 
+  fill(255,255,0); //yellow
+  noStroke(); //turn off stroke 
+  ellipse(250,250,300,300);
+  
+  //mouth
+  fill(0); //black
+  triangle(250,250,500,100, 500,400)
+  
+  fill(250,250,0); // Black
+  let mouthSize = map(sin(mouthAngle), -1, 1, 0, PI / 4); // Animate mouth opening angle
+  mouthAngle += 0.05 * mouthDirection; // Adjust speed of animation
+  arc(250, 250, 300, 300, mouthSize, TWO_PI - mouthSize, PIE);
+  
+  //eye 
+  fill(0); //black
+  ellipse(290,160,44,44);
+  
+}//close draw
